@@ -1,0 +1,51 @@
+{
+  "name": "backend-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "ptest01": "mocha test/products/products01.test.js",
+    "ptest02": "mocha test/products/products02.test.js",
+    "ptest03": "mocha test/products/products03.test.js",
+    "stest01": "mocha test/sessions/sessions01.test.js",
+    "stest02": "mocha test/sessions/sessions02.test.js",
+    "stest03": "mocha test/sessions/sessions03.test.js",
+    "supertest01": "mocha test/supertest01.js",
+    "nodemon": "nodemon src/server.js",
+    "dev": "node --watch src/server.js --mode development",
+    "start": "node src/server.js",
+    "swagger": "node src/swagger.js"
+  },
+  "author": "Sirtori Gustavo <gustavo.sirtori@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "commander": "^11.1.0",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "mongoose-paginate-v2": "^1.7.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.10",
+    "nodemon": "^3.0.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "mocha": "^10.4.0",
+    "supertest": "^6.3.4"
+  }
+}
